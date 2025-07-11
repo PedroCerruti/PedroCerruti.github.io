@@ -51,21 +51,21 @@
         }
 
         .header h1 {
-            font-size: 3.2em;
+            font-size: 2.8em;
             margin-bottom: 10px;
             font-weight: 300;
             letter-spacing: -1px;
         }
 
         .header .tagline {
-            font-size: 1.3em;
+            font-size: 1.1em;
             margin-bottom: 30px;
             opacity: 0.9;
             font-style: italic;
         }
 
         .header .description {
-            font-size: 1.1em;
+            font-size: 1em;
             max-width: 800px;
             margin: 0 auto;
             line-height: 1.7;
@@ -133,7 +133,7 @@
         }
 
         .section-subtitle {
-            font-size: 1.8em;
+            font-size: 1.5em;
             margin: 30px 0 20px 0;
             color: #34495e;
         }
@@ -150,7 +150,7 @@
         .methodology-box h4 {
             color: #2c3e50;
             margin-bottom: 15px;
-            font-size: 1.3em;
+            font-size: 1.1em;
         }
 
 
@@ -194,7 +194,7 @@
 
         .project-description {
             margin-bottom: 25px;
-            font-size: 1.1em;
+            font-size: 1em;
             line-height: 1.7;
         }
 
@@ -243,7 +243,15 @@
         /* Responsive */
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 2.5em;
+                font-size: 2.2em;
+            }
+            
+            .header .tagline {
+                font-size: 1em;
+            }
+            
+            .header .description {
+                font-size: 0.9em;
             }
             
             .section {
@@ -300,6 +308,7 @@
         <div class="container">
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#methodology">Methodology</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -333,7 +342,7 @@
                     </div>
                 </div>
 
-                <p style="font-size: 1.2em; line-height: 1.8; margin: 30px 0;">
+                <p style="font-size: 1.1em; line-height: 1.8; margin: 30px 0;">
                     Psychology + Social Sciences PhD at CONICET-UBA bringing academic rigor to practical analytics. 
                     I understand the human behavior and cultural context behind data patterns, not just the technical implementation.
                     Argentina-Mexico perspective provides deep insight for LATAM markets and Spanish-language data analysis.
@@ -360,11 +369,40 @@
                 </div>
             </section>
 
+            <!-- Services Section -->
+            <section id="services" class="section fade-in">
+                <h2 class="section-title" style="font-size: 1.6em;">Services</h2>
+                
+                <p style="font-size: 1.1em; margin-bottom: 40px;">
+                    Specialized in extracting actionable insights from limited datasets where cultural context and early pattern detection are critical for decision-making.
+                </p>
+
+                <div class="methodology-box">
+                    <h4>📊 E-commerce & Brand Intelligence</h4>
+                    <p>Consumer sentiment analysis, competitive positioning, and reputation monitoring for online markets - including early crisis detection that identifies problems months before they impact ratings</p>
+                </div>
+
+                <div class="methodology-box">
+                    <h4>🏥 Public & Custom Research Analysis</h4>
+                    <p>Track how sensitive topics evolve in public conversation and analyze custom-generated research data (interviews, focus groups, surveys) - pharmaceutical controversies, policy debates, and targeted market studies</p>
+                </div>
+
+                <div class="methodology-box">
+                    <h4>🛡️ Hate Speech & Discrimination Detection</h4>
+                    <p>Automated monitoring systems for discriminatory content targeting vulnerable communities and social groups</p>
+                </div>
+
+                <div class="methodology-box">
+                    <h4>🌐 LATAM Market Intelligence</h4>
+                    <p>Spanish-language analysis combining cultural context with quantitative insights for cross-border business expansion</p>
+                </div>
+            </section>
+
             <!-- Methodology Section -->
             <section id="methodology" class="section fade-in">
                 <h2 class="section-title" style="font-size: 1.6em;">Methodological Approach</h2>
                 
-                <p style="font-size: 1.2em; margin-bottom: 40px;">
+                <p style="font-size: 1.1em; margin-bottom: 40px;">
                     My approach combines critical thinking from social science research with psychological insights into user behavior, 
                     plus methodological triangulation for robust conclusions in limited-data contexts.
                 </p>
@@ -427,69 +465,10 @@
 
                     <div class="project-links">
                         <a href="ecommerce-reputation-analysis-report.pdf" style="color: #3498db; text-decoration: none; margin-right: 20px;">📄 Executive Report</a>
-                        <a href="https://github.com/PedroCerruti/analisis-reputacional-samsung" style="color: #7f8c8d; text-decoration: none;">💻 Technical Repository</a>
+                        <a href="#" style="color: #7f8c8d; text-decoration: none;">💻 Technical Repository</a>
                     </div>
                 </div>
-                <!-- AMIA Project -->
-                <div class="project-card">
-                    <h3 class="project-title" style="font-size: 1.6em;">🔍 Antisemitism Detection: Digital Discourse Analysis During AMIA 2025</h3>
-                    
-                    <div class="project-meta">
-                        <span class="meta-tag">EDA-NLP Triangulation</span>
-                        <span class="meta-tag">Real-time Monitoring</span>
-                        <span class="meta-tag">Spanish NLP</span>
-                        <span class="meta-tag">Social Impact</span>
-                    </div>
 
-                    <div class="project-description">
-                        <p><strong>Challenge:</strong> Real-time antisemitism detection during AMIA commemoration using systematic methodology for Spanish-language social media discourse analysis.</p>
-                        
-                        <p><strong>Methodology:</strong> EDA-NLP triangulation applied to Argentine digital discourse patterns, combining temporal analysis with sentiment clustering and cultural-linguistic considerations for hate speech detection.</p>
-                        
-                        <p><strong>Development Focus:</strong></p>
-                        <ul style="margin: 15px 0; padding-left: 20px;">
-                            <li><strong>Real-time Analysis:</strong> Systematic monitoring during commemoration period (July 18-25, 2025)</li>
-                            <li><strong>Cultural Context:</strong> Spanish NLP optimized for Argentine discourse patterns and antisemitic terminology</li>
-                            <li><strong>Institutional Scalability:</strong> Framework designed for potential scaling to organizational monitoring systems</li>
-                        </ul>
-                        
-                        <p><strong>Expected Impact:</strong> Demonstrates systematic approach to hate speech detection, combining methodological rigor with social impact applications for community protection and institutional awareness.</p>
-                    </div>
-
-                    <div class="project-links">
-                        <span style="color: #7f8c8d; font-style: italic;">🔄 In development - Repository coming soon</span>
-                    </div>
-                </div>
-            <!-- Ozempic Project -->
-                <div class="project-card">
-                    <h3 class="project-title" style="font-size: 1.6em;">💊 Pharmaceutical Discourse Analysis: Ozempic Controversy</h3>
-                    
-                    <div class="project-meta">
-                        <span class="meta-tag">Stakeholder Classification</span>
-                        <span class="meta-tag">Medical Spanish NLP</span>
-                        <span class="meta-tag">Multi-Platform Analysis</span>
-                        <span class="meta-tag">In Development</span>
-                    </div>
-
-                    <div class="project-description">
-                        <p><strong>Challenge:</strong> Systematic analysis of pharmaceutical discourse across digital media and social networks to understand stakeholder dynamics and controversy evolution patterns in Argentine medical Spanish.</p>
-                        
-                        <p><strong>Methodology:</strong> Advanced NLP techniques adapted for medical terminology, combining stakeholder classification with sentiment analysis and temporal discourse evolution across multiple platforms.</p>
-                        
-                        <p><strong>Development Focus:</strong></p>
-                        <ul style="margin: 15px 0; padding-left: 20px;">
-                            <li><strong>Medical Spanish Corpus:</strong> Building specialized terminology dataset for Argentine healthcare discourse</li>
-                            <li><strong>Stakeholder Intelligence:</strong> Automated classification of medical professionals, patients, media, and industry voices</li>
-                            <li><strong>Controversy Mapping:</strong> Tracking discourse evolution and influence patterns across digital platforms</li>
-                        </ul>
-                        
-                        <p><strong>Expected Impact:</strong> Framework for pharmaceutical companies and healthcare organizations to understand public discourse dynamics and stakeholder sentiment in Spanish-speaking markets.</p>
-                    </div>
-
-                    <div class="project-links">
-                        <span style="color: #7f8c8d; font-style: italic;">🔄 In development - Repository coming soon</span>
-                    </div>
-                </div>
                 <!-- Current Focus -->
                 <div style="background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%); padding: 40px; border-radius: 15px; margin: 40px 0;">
                     <h3 style="color: #2c3e50; margin-bottom: 20px;">🎯 Current Focus</h3>
@@ -524,11 +503,11 @@
             <section id="contact" class="section fade-in">
                 <h2 style="font-size: 1.6em; margin-bottom: 30px; color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 15px;">Let's Connect</h2>
                 
-                <p style="font-size: 1.2em; text-align: center; margin-bottom: 40px;">
+                <p style="font-size: 1.1em; text-align: center; margin-bottom: 40px;">
                     Open to consulting projects requiring technical execution with methodological rigor and cultural context.
                 </p>
 
-               <div class="contact-grid">
+                <div class="contact-grid">
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
                         <h4>Email</h4>
